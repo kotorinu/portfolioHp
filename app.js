@@ -135,44 +135,35 @@
       submit.classList.add("is-sending");
       submit.disabled = true;
 
-      if (action.indexOf("mailto:") === 0) {
-        var name = (document.getElementById("cf-name").value || "").trim();
-        var email = (document.getElementById("cf-email").value || "").trim();
-        var topic = (document.getElementById("cf-topic").value || "").trim();
-        var message = (document.getElementById("cf-message").value || "").trim();
-        var subject = encodeURIComponent("Tonari AI 無料相談: " + topic);
-        var body = encodeURIComponent(
-          "お名前: " + name + "\n" +
-          "メール: " + email + "\n" +
-          "ご相談内容: " + topic + "\n\n" +
-          message
-        );
-        window.location.href = "mailto:" + mail + "?subject=" + subject + "&body=" + body;
+      if (!action || action.indexOf("REPLACE_WITH_GOOGLE_APPS_SCRIPT_WEB_APP_ID") !== -1) {
         submit.classList.remove("is-sending");
         submit.disabled = false;
-        okMsg.querySelector("span").textContent =
-          "メールアプリを開きます。開かない場合は " + mail + " へ直接ご連絡ください。";
-        okMsg.classList.add("show");
+        badMsg.querySelector("span").textContent =
+          "フォーム連携の準備中です。送信できない場合は " + mail + " へ直接ご連絡ください。";
+        badMsg.classList.add("show");
         return;
       }
 
       try {
-        var res = await fetch(action, {
+        var data = new FormData(form);
+        data.append("sourcePage", window.location.href);
+
+        await fetch(action, {
           method: "POST",
-          headers: { Accept: "application/json" },
-          body: new FormData(form)
+          mode: "no-cors",
+          body: data
         });
         submit.classList.remove("is-sending");
         submit.disabled = false;
-        if (res.ok) {
-          okMsg.classList.add("show");
-          form.reset();
-        } else {
-          badMsg.classList.add("show");
-        }
+        okMsg.querySelector("span").textContent =
+          "お問い合わせありがとうございます。内容を確認してご返信します。";
+        okMsg.classList.add("show");
+        form.reset();
       } catch (err) {
         submit.classList.remove("is-sending");
         submit.disabled = false;
+        badMsg.querySelector("span").textContent =
+          "送信できない場合は " + mail + " へ直接ご連絡ください。";
         badMsg.classList.add("show");
       }
     });
