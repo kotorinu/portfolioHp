@@ -1,5 +1,5 @@
 const CONFIG = {
-  spreadsheetTitle: "Tonari AI お問い合わせ管理",
+  spreadsheetId: "1jwqfoQ17ljrjNfwjAgOhtfKv422o5CvH74Mttvvx2lI",
   sheetName: "お問い合わせ",
   notificationEmail: "kotokoto.gaisya@gmail.com",
   headers: ["受付日時", "お名前", "メールアドレス", "ご相談内容", "メッセージ", "送信元ページ"]
@@ -42,16 +42,7 @@ function doPost(e) {
 }
 
 function getContactSheet_() {
-  const props = PropertiesService.getScriptProperties();
-  let spreadsheetId = props.getProperty("CONTACT_SPREADSHEET_ID");
-  let spreadsheet;
-
-  if (spreadsheetId) {
-    spreadsheet = SpreadsheetApp.openById(spreadsheetId);
-  } else {
-    spreadsheet = SpreadsheetApp.create(CONFIG.spreadsheetTitle);
-    props.setProperty("CONTACT_SPREADSHEET_ID", spreadsheet.getId());
-  }
+  const spreadsheet = SpreadsheetApp.openById(CONFIG.spreadsheetId);
 
   let sheet = spreadsheet.getSheetByName(CONFIG.sheetName);
   if (!sheet) {

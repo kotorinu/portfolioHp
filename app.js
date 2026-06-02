@@ -129,13 +129,13 @@
         return;
       }
 
-      var action = form.getAttribute("action") || "";
+      var action = form.getAttribute("data-script-url") || "";
       var mail = "kotokoto.gaisya@gmail.com";
 
       submit.classList.add("is-sending");
       submit.disabled = true;
 
-      if (!action || action.indexOf("REPLACE_WITH_GOOGLE_APPS_SCRIPT_WEB_APP_ID") !== -1) {
+      if (!action) {
         submit.classList.remove("is-sending");
         submit.disabled = false;
         badMsg.querySelector("span").textContent =
@@ -156,7 +156,7 @@
         submit.classList.remove("is-sending");
         submit.disabled = false;
         okMsg.querySelector("span").textContent =
-          "お問い合わせありがとうございます。内容を確認してご返信します。";
+          "お問い合わせありがとうございます。内容を確認し、2〜3日以内にご返信します。";
         okMsg.classList.add("show");
         form.reset();
       } catch (err) {
