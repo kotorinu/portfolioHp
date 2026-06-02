@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ja" data-accent="gradient">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tonari AI | 小さなお店・個人事業主向けAIチャットボット制作・業務効率化</title>
+<meta name="description" content="Tonari AIは、小さなお店・個人事業主向けにAIチャットボット制作、問い合わせ対応の自動化、業務効率化、HP/LP制作を伴走支援します。フロントエンドエンジニアが無料相談からやさしくサポート。" />
+<meta name="keywords" content="AIチャットボット制作,個人事業主,小さなお店,業務効率化,問い合わせ自動化,HP制作,LP制作,AI導入相談" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Tonari AI" />
+<meta property="og:title" content="Tonari AI | AIチャットボット制作・業務効率化サポート" />
+<meta property="og:description" content="小さなお店・個人事業主のAI活用を、チャットボット制作、業務効率化、HP/LP制作までやさしく伴走支援します。" />
+<meta property="og:image" content="assets/hero-ai-support.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": "#tonari-ai",
+      "name": "Tonari AI",
+      "description": "小さなお店・個人事業主向けのAIチャットボット制作、業務効率化、HP/LP制作サポート。",
+      "email": "kotokoto.gaisya@gmail.com",
+      "areaServed": "JP",
+      "serviceType": ["AIチャットボット制作", "業務効率化サポート", "HP/LP制作", "AI導入相談"]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "#faq-schema",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "AIやパソコンが苦手でも大丈夫ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "大丈夫です。専門用語をできるだけ使わず、導入後の操作までやさしく伴走します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "どのくらいの期間で導入できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "シンプルなチャットボットであれば数日から2週間ほどが目安です。無料相談で内容に合わせてご提案します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "相談や見積りに費用はかかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "初回相談とお見積りは無料です。必要な範囲だけを整理してご提案します。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ===================== HEADER / NAV ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Tonari AI ホーム">
+      <span class="mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4.97 0 9 3.58 9 8 0 4.42-4.03 8-9 8-1.07 0-2.1-.17-3.04-.48L4 20l1.2-3.3C4.45 15.4 3 13.34 3 11c0-4.42 4.03-8 9-8Z" fill="currentColor"/><circle cx="8.5" cy="11" r="1.2" fill="#fff"/><circle cx="12" cy="11" r="1.2" fill="#fff"/><circle cx="15.5" cy="11" r="1.2" fill="#fff"/></svg>
+      </span>
+      <span>Tonari AI</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="メインナビ">
+      <a href="#problems">お悩み</a>
+      <a href="#services">できること</a>
+      <a href="#demo">体験</a>
+      <a href="#benefits">選ばれる理由</a>
+      <a href="#flow">流れ</a>
+      <a href="#pricing">料金</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="btn btn--primary nav-cta">無料で相談する</a>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero section">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="hero-badge reveal"><span class="dot" aria-hidden="true"></span>個人事業主・小さなお店のためのAI活用サポート</span>
+        <h1 class="reveal d1">「AI、気になるけど<br /><span class="text-grad">何から始めれば</span>…」<br /><span class="keep">その一歩を、</span><span class="keep">いっしょに。</span></h1>
+        <p class="hero-sub reveal d2">問い合わせ対応の自動化から、業務効率化、チャットボット制作まで。むずかしい設定や専門用語はこちらにおまかせ。あなたのお店・お仕事に合わせて、ちいさく始めて育てていけるAI活用を伴走支援します。</p>
+        <div class="hero-cta reveal d3">
+          <a href="#contact" class="btn btn--primary btn--lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            無料で相談する
+          </a>
+          <a href="#demo" class="btn btn--ghost btn--lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+            体験してみる
+          </a>
+        </div>
+        <p class="hero-note reveal d3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          ご相談・お見積りは無料です。まずはお気軽に。
+        </p>
+      </div>
+
+      <div class="hero-visual reveal d2">
+        <img class="hero-img" src="assets/hero-ai-support.webp" alt="小さなお店のAI活用相談イメージ" width="1200" height="900" fetchpriority="high" />
+        <div class="float-card float-stat">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></span>
+          <span>24時間 自動対応<small>取りこぼしを減らす</small></span>
+        </div>
+        <div class="mockchat float-mock" aria-hidden="true">
+          <div class="mockchat-bar">
+            <span class="ava"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></span>
+            <div>
+              <div class="who">お店のサポートボット</div>
+              <div class="stat">オンライン</div>
+            </div>
+          </div>
+          <div class="mockchat-body">
+            <div class="bub in">こんにちは！ご予約・メニュー・営業時間など、何でも聞いてくださいね 😊</div>
+            <div class="bub out">明日の夜、2名で予約できますか？</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust reveal d4">
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>専門知識ゼロでOK</span>
+      <span class="trust-sep" aria-hidden="true"></span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>小さく始められる</span>
+      <span class="trust-sep" aria-hidden="true"></span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>導入後も伴走サポート</span>
+      <span class="trust-sep" aria-hidden="true"></span>
+      <span class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>まずは無料相談から</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROBLEMS ===================== -->
+<section class="section section--alt" id="problems">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow eyebrow--center">Problem</span>
+      <h2 class="section-title">こんなお悩み、ありませんか？</h2>
+      <p class="section-lead">「やったほうが良さそう」とは感じつつ、つい後回しになりがちなAI活用。<br />まずは“もやもや”を言葉にするところから始めましょう。</p>
+    </div>
+    <div class="problem-grid">
+      <div class="problem-card reveal">
+        <div class="q" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg></div>
+        <h3>興味はあるけど、何から手をつければ？</h3>
+        <p>ニュースで話題のAI。便利そうだけど、自分の仕事にどう使えるのか、最初の一歩が見えない。</p>
+      </div>
+      <div class="problem-card reveal d1">
+        <div class="q" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>問い合わせ対応に追われている</h3>
+        <p>営業時間外の連絡、同じような質問への返信。本業の合間に対応していて、取りこぼしも心配。</p>
+      </div>
+      <div class="problem-card reveal d2">
+        <div class="q" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><path d="M8 17h8"/></svg></div>
+        <h3>一人 / 少人数で手が回らない</h3>
+        <p>事務作業や定型業務に時間を取られて、本当にやりたい仕事に集中できていない。</p>
+      </div>
+    </div>
+    <div class="problem-arrow reveal d2">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px"><path d="M12 5v14M19 12l-7 7-7-7"/></svg> その“もやもや”、いっしょに整理します</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow eyebrow--center">Services</span>
+      <h2 class="section-title">わたしができること</h2>
+      <p class="section-lead">「つくって終わり」ではなく、相談から運用まで。お店・お仕事の規模に合わせて、必要なところだけ選べます。</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc-card reveal">
+        <img class="svc-img" src="assets/service-website.webp" alt="HPとLP制作のイメージ" width="960" height="600" loading="lazy" />
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+        <h3>HP / LP 制作</h3>
+        <p>スマホで見やすく、問い合わせにつながるホームページ・ランディングページを制作します。</p>
+        <div class="svc-tags"><span>レスポンシブ</span><span>SEO基礎</span></div>
+      </article>
+      <article class="svc-card reveal d1">
+        <img class="svc-img" src="assets/service-chatbot.webp" alt="問い合わせ対応チャットボットのイメージ" width="960" height="600" loading="lazy" />
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>問い合わせ対応ボット</h3>
+        <p>よくある質問への自動応答や予約の一次受付を、24時間休まず行うチャットボットを構築します。</p>
+        <div class="svc-tags"><span>FAQ自動応答</span><span>予約一次受付</span></div>
+      </article>
+      <article class="svc-card reveal d2">
+        <img class="svc-img" src="assets/service-automation.webp" alt="業務効率化サポートのイメージ" width="960" height="600" loading="lazy" />
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.6 5.6l-6 6a2 2 0 1 0 2.8 2.8l6-6a4 4 0 0 0 5.6-5.6l-2.3 2.3-2.1-2.1z"/></svg></div>
+        <h3>業務効率化サポート</h3>
+        <p>日々の繰り返し作業や資料づくりを、AIツールの活用で時短。仕組みづくりからお手伝いします。</p>
+        <div class="svc-tags"><span>作業自動化</span><span>文章生成</span></div>
+      </article>
+      <article class="svc-card reveal">
+        <img class="svc-img" src="assets/service-consulting.webp" alt="AI導入相談と伴走サポートのイメージ" width="1260" height="540" loading="lazy" />
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg></div>
+        <h3>AI導入の相談 / 伴走</h3>
+        <p>「うちの場合は何ができる？」をいっしょに整理。導入後も気軽に相談できる伴走型のサポートです。</p>
+        <div class="svc-tags"><span>無料相談OK</span><span>継続サポート</span><span>勉強会</span></div>
+      </article>
+      <article class="svc-card reveal d1">
+        <img class="svc-img" src="assets/service-custom-dev.webp" alt="オーダーメイド開発のイメージ" width="1260" height="540" loading="lazy" />
+        <div class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+        <h3>オーダーメイド開発</h3>
+        <p>「こんなことできる？」のご相談から。既存サービスでは難しい、あなた専用の仕組みを開発します。</p>
+        <div class="svc-tags"><span>要件整理から</span><span>API連携</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LIVE DEMO ===================== -->
+<section class="section section--alt" id="demo">
+  <div class="wrap">
+    <div class="demo-shell">
+      <div class="demo-intro reveal">
+        <span class="pill"><span class="live" aria-hidden="true"></span>Try it</span>
+        <h2 class="section-title" style="margin-top:16px">作ったボットを<br class="sp-only" />その場で体験</h2>
+        <p class="section-lead">実際の相談に近い雰囲気で動くチャットです。サービス内容や進め方について、気になることを聞いてみてください。</p>
+        <div class="demo-samples">
+          <span class="lbl">質問の例（タップで送信）</span>
+          <button class="sample-q" data-q="飲食店をやっています。予約対応のボットは作れますか？">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg>
+            予約対応のボットは作れますか？
+          </button>
+          <button class="sample-q" data-q="AIの知識が全くないのですが、相談しても大丈夫ですか？">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg>
+            知識ゼロでも相談していい？
+          </button>
+          <button class="sample-q" data-q="導入までの流れと、だいたいの費用感を教えてください。">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1h6c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2Z"/></svg>
+            導入の流れと費用感は？
+          </button>
+        </div>
+        <p class="demo-disclaimer">回答は一般的な案内です。具体的なご相談は<a href="#contact" style="color:var(--accent);font-weight:600">お問い合わせ</a>からどうぞ。</p>
+      </div>
+
+      <div class="chat reveal d1" id="chat">
+        <div class="chat-head">
+          <span class="ava" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4M8 16h.01M16 16h.01"/></svg></span>
+          <div class="who"><b>Tonari AI アシスタント</b><span>ふだんはこんな雰囲気です</span></div>
+          <span class="badge-demo">体験</span>
+        </div>
+        <div class="chat-log" id="chatLog" aria-live="polite"></div>
+        <form class="chat-foot" id="chatForm" autocomplete="off">
+          <input type="text" id="chatInput" aria-label="メッセージを入力" maxlength="300" />
+          <button type="submit" class="send-btn" id="chatSend" aria-label="送信">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BENEFITS ===================== -->
+<section class="section" id="benefits">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow eyebrow--center">Why us</span>
+      <h2 class="section-title">選ばれる理由</h2>
+      <p class="section-lead">大きな制作会社とは少しちがう、“ひとり伴走者”だからできることがあります。</p>
+    </div>
+    <div class="benefit-grid">
+      <div class="benefit-card reveal">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg></span>
+        <div><h3>小さく始めて、育てられる</h3><p>いきなり大きな投資は不要。必要な部分から少しずつ。手応えを確かめながら拡張できます。</p></div>
+      </div>
+      <div class="benefit-card reveal d1">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <div><h3>専門用語ぬきで、伴走</h3><p>「むずかしい話は苦手」で大丈夫。やさしい言葉でご説明し、運用が軌道に乗るまで並走します。</p></div>
+      </div>
+      <div class="benefit-card reveal d2">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 16l4-4 3 3 5-6"/></svg></span>
+        <div><h3>小規模だからこその小回り</h3><p>窓口は一人。やりとりがシンプルで、ちょっとした修正や相談にもスピーディーに対応できます。</p></div>
+      </div>
+      <div class="benefit-card reveal d3">
+        <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+        <div><h3>最新のAIを、実務目線で</h3><p>流行りを追うだけでなく「あなたの仕事で本当に役立つか」を基準に、地に足のついた提案をします。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FLOW ===================== -->
+<section class="section section--alt" id="flow">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow eyebrow--center">Flow</span>
+      <h2 class="section-title">ご利用の流れ</h2>
+      <p class="section-lead">ご相談から納品・サポートまで。むずかしい手続きはありません。</p>
+    </div>
+    <div class="flow">
+      <div class="flow-step reveal"><div class="num" aria-hidden="true"></div><h3>ご相談</h3><p>フォームから無料でご連絡ください。やりたいこと・お悩みをお聞かせください。</p></div>
+      <div class="flow-step reveal d1"><div class="num" aria-hidden="true"></div><h3>ヒアリング</h3><p>オンライン等でくわしくお話を。現状と目標を整理します。</p></div>
+      <div class="flow-step reveal d2"><div class="num" aria-hidden="true"></div><h3>ご提案</h3><p>最適なプランとお見積りをご提示。ご納得いただいてから着手します。</p></div>
+      <div class="flow-step reveal d3"><div class="num" aria-hidden="true"></div><h3>制作</h3><p>進捗を共有しながら制作。途中の確認・修正も丁寧に。</p></div>
+      <div class="flow-step reveal d4"><div class="num" aria-hidden="true"></div><h3>納品 / サポート</h3><p>公開して終わりではなく、運用が軌道に乗るまで伴走します。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow eyebrow--center">Pricing</span>
+      <h2 class="section-title">料金の目安</h2>
+      <p class="section-lead">まずは<strong>無料相談</strong>から。下記は最低料金の目安です（金額はサンプルです。内容に応じてお見積りします）。</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card feature reveal">
+        <span class="price-tag-free"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/></svg>まずはここから</span>
+        <h3 style="margin-top:14px">無料相談</h3>
+        <p class="desc">「うちの場合どうなる？」を気軽に。売り込みはしません。</p>
+        <div class="price-amount">¥0 <small>/ 初回</small></div>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>オンライン約30〜45分</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>お悩み整理・活用アイデア</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>無理な勧誘なし</li>
+        </ul>
+        <a href="#contact" class="btn btn--light btn--block">無料で相談する</a>
+      </div>
+
+      <div class="price-card reveal d1">
+        <h3>チャットボット制作</h3>
+        <p class="desc">問い合わせ・FAQ自動応答の基本パッケージ。</p>
+        <div class="price-amount"><span>個別見積り</span></div>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>FAQ自動応答の設計・構築</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>サイトへの設置</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>初期チューニング</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block">相談する</a>
+      </div>
+
+      <div class="price-card reveal d2">
+        <h3>HP / LP 制作</h3>
+        <p class="desc">スマホ最適化・問い合わせ導線つき。</p>
+        <div class="price-amount"><span>個別見積り</span></div>
+        <ul class="price-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>レスポンシブ対応</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>問い合わせフォーム</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>公開サポート</li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost btn--block">相談する</a>
+      </div>
+    </div>
+
+    <div class="price-menu">
+      <div class="menu-row reveal"><div class="name">業務効率化サポート<small>作業の自動化・時短</small></div><div class="amt"><small>個別お見積り</small></div></div>
+      <div class="menu-row reveal d1"><div class="name">AI導入 伴走サポート<small>月額・継続相談</small></div><div class="amt"><small>内容に応じてご提案</small></div></div>
+      <div class="menu-row reveal d2"><div class="name">オーダーメイド開発<small>要件に応じて</small></div><div class="amt"><small>個別お見積り</small></div></div>
+    </div>
+    <p class="price-note">内容や運用体制に合わせて、必要な範囲だけを組み合わせてご提案します。</p>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section section--alt" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <img class="about-photo-slot" src="assets/about-portrait.webp" alt="Tonari AIの女性フロントエンドエンジニアによる伴走サポートイメージ" width="960" height="1200" loading="lazy" />
+      </div>
+      <div class="about-body">
+        <span class="eyebrow reveal">About</span>
+        <h2 class="reveal d1">はじめまして、<br />あなたのAI伴走役です。</h2>
+        <div class="about-role reveal d1">フロントエンドエンジニア / AI活用サポート</div>
+        <p class="reveal d2">本業ではフロントエンドエンジニアとして、使いやすい画面づくりやWebの仕組みづくりに携わっています。だからこそ、AIツールも“便利そう”で終わらせず、実際の仕事で使いやすい形に整えることを大切にしています。<br /><br />小さなお店や個人事業の方が、問い合わせ対応や日々の作業を少しずつラクにできるように。専門用語はできるだけ使わず、相談から制作、運用までいっしょに伴走します。</p>
+        <div class="about-stats reveal d3">
+          <div class="stat"><b style="color:var(--accent)">伴走</b><span>相談から運用まで<br />継続サポート</span></div>
+          <div class="stat"><b>1〜2</b><span>営業日以内に<br />ご返信</span></div>
+          <div class="stat"><b>¥0</b><span>初回相談・<br />お見積り</span></div>
+        </div>
+        <span class="about-edit reveal d3">小さく試して、続けやすい形へ。あなたの現場に合わせて整えます。</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow eyebrow--center">FAQ</span>
+      <h2 class="section-title">よくあるご質問</h2>
+    </div>
+    <div class="faq" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>AIやパソコンが苦手でも大丈夫ですか？</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">もちろん大丈夫です。むしろ「苦手な方」のためのサポートです。専門用語はできるだけ使わず、やさしい言葉でご説明します。導入後の操作も、運用に慣れるまで伴走します。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>どのくらいの期間で導入できますか？</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">内容によりますが、シンプルなチャットボットであれば数日〜2週間ほどが目安です。まずは無料相談で、ご希望の時期に合わせたスケジュールをご提案します。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>料金はどのくらいかかりますか？</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">料金の目安は<a href="#pricing" style="color:var(--accent);font-weight:600">こちら</a>をご覧ください。内容によって変わるため、無料相談でお話をうかがったうえで、お見積りをお出しします。ご納得いただいてからの着手なので安心です。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>作って終わりではなく、後から相談できますか？</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">はい。運用が軌道に乗るまでの伴走や、継続サポートのご相談も承っています。「ちょっと直したい」「使い方がわからない」も気軽にご連絡ください。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>対応エリアは？オンラインだけでも大丈夫？</span><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span></button>
+        <div class="faq-a"><div class="faq-a-inner">オンライン（ビデオ通話・チャット）を中心に、全国対応しています。対面のご希望はお問い合わせ時にご相談ください。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Contact</span>
+        <h2>まずは、お気軽に。<br />無料でご相談ください。</h2>
+        <p class="contact-lead">「こんなこと聞いてもいいのかな？」という小さな疑問でも大歓迎です。売り込みはしませんので、安心してお問い合わせください。</p>
+        <ul class="contact-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>ご相談・お見積りは無料</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>1〜2営業日以内にご返信</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>無理な勧誘はいたしません</li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal d1" id="contactForm" action="mailto:kotokoto.gaisya@gmail.com" method="POST" novalidate>
+        <div class="form-msg ok" id="formOk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>送信しました。ご連絡ありがとうございます！折り返しご返信します。</span></div>
+        <div class="form-msg bad" id="formBad"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg><span>メールアプリが開かない場合は kotokoto.gaisya@gmail.com へ直接ご連絡ください。</span></div>
+
+        <div class="form-row">
+          <div class="field" data-required>
+            <label for="cf-name">お名前 <span class="req">必須</span></label>
+            <input type="text" id="cf-name" name="name" />
+            <span class="err">お名前をご入力ください。</span>
+          </div>
+          <div class="field" data-required data-type="email">
+            <label for="cf-email">メールアドレス <span class="req">必須</span></label>
+            <input type="email" id="cf-email" name="email" />
+            <span class="err">正しいメールアドレスをご入力ください。</span>
+          </div>
+        </div>
+        <div class="field">
+          <label for="cf-topic">ご相談内容</label>
+          <select id="cf-topic" name="topic">
+            <option>チャットボット制作について</option>
+            <option>HP / LP 制作について</option>
+            <option>業務効率化サポートについて</option>
+            <option>AI導入の相談 / 伴走について</option>
+            <option>オーダーメイド開発について</option>
+            <option>まだ決まっていない / その他</option>
+          </select>
+        </div>
+        <div class="field" data-required>
+          <label for="cf-message">ご相談内容・お困りごと <span class="req">必須</span></label>
+          <textarea id="cf-message" name="message"></textarea>
+          <span class="err">ご相談内容をご入力ください。</span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block btn--lg" id="contactSubmit">
+          <span class="btn-spinner" aria-hidden="true"></span>
+          <span class="btn-label">無料相談を送信する</span>
+        </button>
+        <p class="form-hint">メールで直接相談する：<a href="mailto:kotokoto.gaisya@gmail.com">kotokoto.gaisya@gmail.com</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="#top">
+          <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3c4.97 0 9 3.58 9 8 0 4.42-4.03 8-9 8-1.07 0-2.1-.17-3.04-.48L4 20l1.2-3.3C4.45 15.4 3 13.34 3 11c0-4.42 4.03-8 9-8Z" fill="currentColor"/><circle cx="8.5" cy="11" r="1.2" fill="#fff"/><circle cx="12" cy="11" r="1.2" fill="#fff"/><circle cx="15.5" cy="11" r="1.2" fill="#fff"/></svg></span>
+          <span>Tonari AI</span>
+        </a>
+        <p class="footer-about">小さなお店・個人事業の方のための、AIチャットボット活用サポート。むずかしいことは、いっしょに。</p>
+        <div class="footer-social" style="margin-top:18px">
+          <a href="mailto:kotokoto.gaisya@gmail.com" aria-label="メールで相談する" title="メールで相談する"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>メニュー</h4>
+          <a href="#services">できること</a>
+          <a href="#demo">体験してみる</a>
+          <a href="#pricing">料金の目安</a>
+          <a href="#about">プロフィール</a>
+        </div>
+        <div class="footer-col">
+          <h4>サポート</h4>
+          <a href="#faq">よくある質問</a>
+          <a href="#flow">ご利用の流れ</a>
+          <a href="#contact">お問い合わせ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Tonari AI. All rights reserved.</span>
+      <span>個人事業主・小さなお店のためのAI活用サポート</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== TWEAKS PANEL ===================== -->
+<aside id="tweaks" aria-label="Tweaks">
+  <div class="tw-head">
+    <b>Tweaks</b>
+    <button class="tw-x" id="twClose" aria-label="閉じる">×</button>
+  </div>
+  <div class="tw-body">
+    <div class="tw-group">
+      <div class="tw-label">アクセントカラー</div>
+      <div class="tw-swatches" id="twAccent">
+        <button data-accent="blue" title="ブルー"><span style="background:#2563eb"></span></button>
+        <button data-accent="teal" title="ティール"><span style="background:#0d9488"></span></button>
+        <button data-accent="gradient" title="グラデーション"><span style="background:linear-gradient(120deg,#2563eb,#0d9488)"></span></button>
+      </div>
+    </div>
+    <div class="tw-group">
+      <div class="tw-label">日本語フォント</div>
+      <div class="tw-seg" id="twFont">
+        <button data-font="noto">Noto</button>
+        <button data-font="zen">Zen Kaku</button>
+        <button data-font="mplus">M PLUS</button>
+      </div>
+    </div>
+    <div class="tw-group">
+      <div class="tw-label">ヒーローの背景</div>
+      <div class="tw-seg" id="twHero">
+        <button data-hero="soft">やわらか</button>
+        <button data-hero="plain">無地</button>
+      </div>
+    </div>
+    <div class="tw-group">
+      <div class="tw-label">角丸の強さ</div>
+      <div class="tw-seg" id="twRadius">
+        <button data-radius="sharp">控えめ</button>
+        <button data-radius="default">標準</button>
+        <button data-radius="round">まるく</button>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<script>
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "accent": "gradient",
+  "font": "noto",
+  "hero": "soft",
+  "radius": "default"
+}/*EDITMODE-END*/;
+</script>
+<script src="chatbot.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
