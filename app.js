@@ -129,7 +129,7 @@
         return;
       }
 
-      var action = form.getAttribute("data-script-url") || "";
+      var action = form.getAttribute("data-script-url") || form.getAttribute("action") || "";
       var mail = "kotokoto.gaisya@gmail.com";
 
       submit.classList.add("is-sending");
